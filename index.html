@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Productora Audiovisual</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* Fondo negro para el header que contiene el GIF */
+        .hero {
+            background-color: black;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Ajuste del tamaño del GIF */
+        .imagen-principal {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Fondo rojo para la sección de trabajos realizados */
+        #trabajos {
+            background-color: #cb162d;
+            padding: 20px;
+            color: white;
+        }
+
+        /* Ajustes adicionales para la galería de trabajos */
+        .trabajos-galeria {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .trabajo-item {
+            text-align: center;
+            flex: 1;
+        }
+
+        .trabajo-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Otros estilos */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #contacto {
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Estilos para el formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #cb162d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #a00e22;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            color: white;
+        }
+
+        /* Centrar la sección de descripción con fuente más moderna */
+        #descripcion-productora {
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.2em;
+            padding: 40px 20px;
+        }
+
+        /* Trabajos en columna para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .trabajos-galeria {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <img src="Comp1.gif" alt="Imagen Principal" class="imagen-principal">
+    </header>
+
+    <section id="descripcion-productora">
+        <p>Nos dedicamos a la creación de contenidos audiovisuales únicos, <br/>adaptados a las necesidades de nuestros clientes, con una mirada innovadora y creativa. <br/> Desde la idea inicial hasta la postproducción, <br/> nos comprometemos a brindar un servicio de alta calidad.</p>
+    </section>
+
+    <section id="trabajos">
+        <h2>Trabajos Realizados</h2>
+        <div class="trabajos-galeria">
+            <div class="trabajo-item">
+                <img src="trabajo1.jpg" alt="Trabajo 1">
+                <p>Descripción del trabajo 1.</p>
+            </div>
+            <div class="trabajo-item">
+                <img src="trabajo2.jpg" alt="Trabajo 2">
+                <p>Descripción del trabajo 2.</p>
+            </div>
+            <div class="trabajo-item">
+                <img src="trabajo3.jpg" alt="Trabajo 3">
+                <p>Descripción del trabajo 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form action="mailto:tucorreo@example.com" method="POST" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tu Productora. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const hero = document.querySelector('.hero');
+            const contacto = document.querySelector('#contacto');
+            if (window.scrollY > 50) {
+                hero.classList.add('scrolled');
+                contacto.classList.add('scrolled');
+            } else {
+                hero.classList.remove('scrolled');
+                contacto.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

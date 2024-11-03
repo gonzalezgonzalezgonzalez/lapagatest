@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Centrar la imagen principal (logo o GIF) */
+.imagen-principal {
+    max-width: 100%;  /* La imagen no excederá el ancho del contenedor */
+    height: auto;     /* Mantiene la proporción de la imagen */
+    display: block;   /* Evita el espacio en línea debajo de la imagen */
+    margin: 0 auto;   /* Centra la imagen en su contenedor */
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Estilos para el header con fondo negro */
+.hero {
+    background-color: #000; /* Fondo negro */
+    color: #fff;            /* Texto en blanco para que contraste con el fondo */
+    text-align: center;     /* Centra el contenido dentro del header */
+    padding: 50px 0;        /* Espacio superior e inferior */
+}
+
+/* Ajustes adicionales para la imagen GIF */
+.imagen-principal {
+    max-width: 100%;    /* La imagen no excederá el ancho del contenedor */
+    height: auto;       /* Mantiene las proporciones de la imagen */
+    display: block;     /* Evita el espacio en línea debajo de la imagen */
+    margin: 0 auto;     /* Centra la imagen horizontalmente */
+}
+
+/* Hero section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagen-principal.jpg') center/cover no-repeat;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero.scrolled {
+    background-color: #ff5a5f;
+}
+
+/* Sección Descripción Productora */
+#descripcion-productora {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#descripcion-producto

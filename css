@@ -1,0 +1,113 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.imagen-principal {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Sección de trabajos */
+#trabajos {
+    margin: 20px 0;
+}
+
+#trabajos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.trabajos-galeria {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.trabajos-galeria img {
+    width: 100%;
+    max-width: 32%;
+    border-radius: 10px;
+}
+
+/* Formulario de contacto */
+#contacto {
+    margin: 20px 0;
+}
+
+#contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .trabajos-galeria {
+        flex-direction: column;
+    }
+
+    .trabajos-galeria img {
+        max-width: 100%;
+    }
+}
